@@ -1,4 +1,32 @@
+let total=0
+
 $(document).ready(function(){
+    $("#bt1").click(function(){
+        total+=10
+        document.getElementById("contenido").innerHTML = total;
+        
+    });
+    $("#bt2").click(function(){
+        total+=20
+        document.getElementById("contenido").innerHTML = total;
+    });
+    $("#bt3").click(function(){
+        total+=30
+        document.getElementById("contenido").innerHTML = total;
+    });
+    $("#bt4").click(function(){
+        total+=40
+        document.getElementById("contenido").innerHTML = total;
+    });
+    $("#bt5").click(function(){
+        total+=50
+        document.getElementById("contenido").innerHTML = total;
+    });
+    $("#c2").hide()
+    $("#c4").hide()
+    $("#c6").hide()
+    $("#c8").hide()
+    $("#c10").hide()
     $("#c1").mouseleave(function(){
         $("#c2").hide()
     });
